@@ -3,67 +3,64 @@
 	<head>
 		<title>VR is the Future!</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
 	</head>
 	<body>
-		
+
 		<!-- NAV -->
-			<center>
-						<a href="#home"><li> HOME </li></a> 
-						<a href="#gallery"><li>GALLERY</li></a> 
+						<a href="#home"><li> HOME </li></a>
+						<a href="#gallery"><li>GALLERY</li></a>
 						<a href="#contact"><li>RESERVATIONS</li></a>
-			</center>
 		<!--END NAV-->
-		
-		
+
+
 		<!--HOME-->
 				<div id="home">
 					<div>
 						<div>
-							<center>
-							<h1><span>VR is the Future!</span></h1>
-							<img src="./images/futureheader.jpg" alt="Woman wearing VR headset" width="600" height="350">
-							</center>
+							<h1 class="header-text">VR is the Future!</h1>
+							<img src="./images/futureheader.jpg" alt="Woman wearing VR headset" width="600" height="350" class="main-image">
 						</div>
 					</div>
 				</div>
 		<!--END HOME-->
-		
-		
+
+
 		<!--GALLERY-->
-			<section>
-				<div id="gallery">
+			<section id="gallary">
+				<div class="container">
 					<h1>Gallery</h1>
-					<div>
-						
+					<div class="flex-container">
+
 						<!-- PHOTO-CONTAINER 1-->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/Left.jpg" alt="Descomposition man." width="400" height="250">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Decomposition man</p>
 								</div>
 							</div>
 						</div>
 						<!-- END PHOTO-CONTAINER 1-->
-						
+
 						<!-- PHOTO-CONTAINER 2-->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 							<img src="./images/Middle.jpg" alt="Floating woman" width="400" height="250">
-								<div>
+							<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Floating woman</p>
 								</div>
 							</div>
 						</div>
 						<!-- END PHOTO-CONTAINER 2-->
-						
+
 						<!-- PHOTO-CONTAINER 3-->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 							<img src="./images/Right.jpg" alt="Man playing VR" width="400" height="250">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Man playing VR</p>
 								</div>
@@ -74,48 +71,50 @@
 				</div>
 			</section>
 		<!--END GALLERY-->
-		
+
 		<!--Youtube Video-->
-			<center>
+			<div class="container-video">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/fnCmUWqKo6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</center>
+			</div>
 		<!--End Youtube Video-->
-		
+
 		<!--RSVP-->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
 						<h2><span>Step into Reality</span>
 							<br />Reserve your spot today!
 						</h2>
 						<p>
-							Contact information.
+							Contact information:
 						</p>
-					</div>
+						<div class="form-rsvp">
 						<form action="" method="post">
 							<input class="rsvp" type="text" value="First Name: ">
 							<input class="rsvp" type="text" value="Last Name: ">
-							<input class="rsvp" type="email" value="Email Address: ">
-							<input class="rsvp" type="tel" value="Phone Number: ">
+							<input class="rsvp" type="text" value="Email Address: ">
+							<input class="rsvp" type="text" value="Phone Number: ">
 							<div class="form-spacer">
 								<label class="terms">Terms and Conditions</label>
 							</div>
-							<div>
+							<div class="submit">
 								<input type="submit" value="Submit">
 							</div>
 						</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!--END RSVP-->
-		
+
 		<!--FOOTER-->
 		<div>
 			www.ChangeYourReality.com &nbsp;|&nbsp; &copy; 2022
 		</div>
 		<!-- END FOOTER-->
 
-	</body>	
+	</body>
 </html>
