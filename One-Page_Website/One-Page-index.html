@@ -31,40 +31,78 @@
 				<div class="container">
 					<h1>Gallery</h1>
 					<div class="flex-container">
+						<!--images to open lightbox-->
+						<div class="row">
+							<div class="column">
+							  <img src="Images/Left.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="Images/Middle.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="Images/Right.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+						</div>
 
 						<!-- PHOTO-CONTAINER 1-->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./images/Left.jpg" alt="Descomposition man." width="400" height="250">
+						<div id="myModal" class="photo-container">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+								<div class="photo">
+								<img src="./images/Left.jpg" alt="Descomposition man." style="width:450px" height="250px">
 								<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Decomposition man</p>
 								</div>
 							</div>
-						</div>
+
 						<!-- END PHOTO-CONTAINER 1-->
 
 						<!-- PHOTO-CONTAINER 2-->
-						<div class="photo-container">
+
 							<div class="photo">
-							<img src="./images/Middle.jpg" alt="Floating woman" width="400" height="250">
+							<img src="./images/Middle.jpg" alt="Floating woman" style="width:450px" height="250px">
 							<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Floating woman</p>
-								</div>
 							</div>
-						</div>
+							</div>
+
 						<!-- END PHOTO-CONTAINER 2-->
 
 						<!-- PHOTO-CONTAINER 3-->
-						<div class="photo-container">
+
 							<div class="photo">
-							<img src="./images/Right.jpg" alt="Man playing VR" width="400" height="250">
+							<img src="./images/Right.jpg" alt="Man playing VR" style="width:450px" height="250px">
 								<div class="photo-overlay">
 									<h3>Click to enlarge</h3>
 									<p>Man playing VR</p>
 								</div>
 							</div>
+
+							<!--next previous controls-->
+							<div>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+
+							<!-- Caption text -->
+    						<div class="caption-container">
+								<p id="caption"></p>
+	  						</div>
+						<!-- Thumbnail image controls -->
+	  					<div class="column">
+							<img class="thumbnail" src="Images/Middle.jpg" onclick="currentSlide(2)" alt="Floating woman">
+	  					</div>
+
+	  					<div class="column">
+							<img class="thumbnail" src="Images/Right.jpg" onclick="currentSlide(3)" alt="Descomposition man.">
+	  					</div>
+
+	  					<div class="column">
+							<img class="thumbnail" src="Images/Left.jpg" onclick="currentSlide(1)" alt="Man playing VR">
+	  					</div>
 						</div>
 						<!-- END PHOTO-CONTAINER 3-->
 					</div>
